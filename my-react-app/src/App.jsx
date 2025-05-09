@@ -1,10 +1,10 @@
-import Header from "./assets/Header/Header";
+import Student from "./Student.jsx";
 
 function App(){
 
   return(
     <>
-      <Header/>
+      <Student name = "Gian" age = {26} isStudent = {true}/>
     </>
     
   );
