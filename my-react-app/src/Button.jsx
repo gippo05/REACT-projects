@@ -1,25 +1,32 @@
-
+import React, {useState} from 'react';
 
 function Button(){
 
-    let count = 0;
+    const [name, setName] = useState("Guest");
+    const [age, setAge] = useState(0);
+    const [isEmployed, setEmployedStatus] = useState(false);
 
-    const handleClick = () =>{
-        if (count < 3){
-            count++;
-            console.log(`You clicked me ${count} time/s!`);
-        }
-        else{
-            console.log("Stop fucking clicking me!");
-        }
+    const updateName = () =>{
+        setName("Gian");
     }
 
-    const handleClick2 = (name) =>{
-        console.log(`${name} stop clicking me!`)
+    const updateAge = () =>{
+        setAge(age + 1);
+    }
+
+    const updateEmployment = () =>{
+        setEmployedStatus(!isEmployed);
     }
 
     return(
-        <button onClick={() => handleClick2("Gian")}>Click Me</button>
+        <div>
+            <p>Name: {name}</p>
+            <button onClick={updateName}>Update Name</button>
+            <p>Age: {age}</p>
+            <button onClick={updateAge}>Update Age</button>
+            <p>Employment Status: {isEmployed ? "Yes" : "No"}</p>
+            <button onClick={updateEmployment}>Update Employment</button>
+        </div>
     );
 }
 
