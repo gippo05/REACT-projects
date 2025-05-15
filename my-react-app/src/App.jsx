@@ -1,4 +1,4 @@
-import Button from './Button.jsx'
+import OnChange from "./OnChange";
 
 function App(){
 
@@ -8,7 +8,7 @@ function App(){
   
   return(
     <>
-      <Button />
+      <OnChange />
     </>
     
   );
