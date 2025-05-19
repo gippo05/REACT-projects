@@ -1,4 +1,4 @@
-import OnChange from "./OnChange";
+import ColorPicker from "../../Learning/ColorPicker";
 
 function App(){
 
@@ -8,7 +8,7 @@ function App(){
   
   return(
     <>
-      <OnChange />
+      <ColorPicker />
     </>
     
   );

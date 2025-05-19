@@ -1,0 +1,23 @@
+
+.color-container{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.color-change{
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
+.color-change p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    border-radius: 20px;
+}
