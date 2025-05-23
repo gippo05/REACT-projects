@@ -1,5 +1,5 @@
-import ColorPicker from "../../Learning/ColorPicker";
-
+import UpdateArray
+ from "../../Learning/UpdateArray";
 function App(){
 
   
@@ -8,7 +8,7 @@ function App(){
   
   return(
     <>
-      <ColorPicker />
+      <UpdateArray/>
     </>
     
   );
